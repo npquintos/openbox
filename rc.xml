@@ -326,7 +326,7 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for file manager nemo -->
+    <!-- Keybindings for running applications -->
     <keybind key="W-n">
       <action name="Execute">
         <startupnotify>
@@ -336,7 +336,7 @@
         <command>nemo</command>
       </action>
     </keybind>
-    <!-- Keybindings for file manager pcmanfm -->
+    <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -364,6 +364,46 @@
           <name>Libre Office</name>
         </startupnotify>
         <command>libreoffice</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for volume up -->
+    <keybind key="C-Right">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Volume Up</name>
+        </startupnotify>
+        <command>amixer set Master 10%+</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for volume up -->
+    <keybind key="C-Up">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Volume Up</name>
+        </startupnotify>
+        <command>amixer set Master 10%+</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for volume down -->
+    <keybind key="C-Left">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Volume Down</name>
+        </startupnotify>
+        <command>amixer set Master 10%-</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for volume down -->
+    <keybind key="C-Down">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Volume Down</name>
+        </startupnotify>
+        <command>amixer set Master 10%-</command>
       </action>
     </keybind>
     <!-- Keybindings for firefox -->
@@ -438,36 +478,6 @@
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
-      </mousebind>
-      <mousebind button="A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-S-Up" action="Click">
-        <action name="SendToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-S-Down" action="Click">
-        <action name="SendToDesktop">
-          <to>next</to>
-        </action>
       </mousebind>
     </context>
     <context name="Titlebar">
@@ -678,16 +688,6 @@
         </action>
       </mousebind>
       <mousebind button="A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Down" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
