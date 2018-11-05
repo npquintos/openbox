@@ -326,7 +326,17 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
+    <!-- Keybindings for file manager nemo -->
+    <keybind key="W-n">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>nemo</name>
+        </startupnotify>
+        <command>nemo</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for file manager pcmanfm -->
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
