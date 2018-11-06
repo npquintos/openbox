@@ -227,26 +227,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -283,47 +263,6 @@
           <action name="Raise"/>
           <action name="Unshade"/>
         </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow">
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows">
-        <direction>right</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows">
-        <direction>left</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows">
-        <direction>up</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows">
-        <direction>down</direction>
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
@@ -426,6 +365,10 @@
         <command>gnome-terminal</command>
       </action>
     </keybind>
+    <!-- Keybindings for Maximizing -->
+    <keybind key="W-z">
+      <action name="ToggleMaximize"/>
+    </keybind>
     <!-- Keybindings for Blender -->
     <keybind key="W-b">
       <action name="Execute">
@@ -465,6 +408,11 @@
       </mousebind>
       <mousebind button="A-Left" action="Drag">
         <action name="Move"/>
+      </mousebind>
+      <mousebind button="C-Right" action="Press">
+        <action name="ShowMenu">
+          <menu>root-menu</menu>
+      </action>
       </mousebind>
       <mousebind button="A-Right" action="Press">
         <action name="Focus"/>
