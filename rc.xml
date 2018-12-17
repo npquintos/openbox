@@ -306,7 +306,7 @@
       </action>
     </keybind>
     <!-- Keybindings for volume up -->
-    <keybind key="C-Right">
+    <keybind key="A-Right">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -316,7 +316,7 @@
       </action>
     </keybind>
     <!-- Keybindings for volume up -->
-    <keybind key="C-Up">
+    <keybind key="A-Up">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -326,7 +326,7 @@
       </action>
     </keybind>
     <!-- Keybindings for volume down -->
-    <keybind key="C-Left">
+    <keybind key="A-Left">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -336,7 +336,7 @@
       </action>
     </keybind>
     <!-- Keybindings for volume down -->
-    <keybind key="C-Down">
+    <keybind key="A-Down">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
