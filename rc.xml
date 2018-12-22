@@ -419,7 +419,7 @@
       <mousebind button="A-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
-      <mousebind button="A-Right" action="Press">
+      <mousebind button="W-Right" action="Press">
         <action name="ShowMenu">
           <menu>root-menu</menu>
       </action>
